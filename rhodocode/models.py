@@ -8,8 +8,6 @@ MODELS: List[Dict] = [
     # free
     {"id": "deepseek-ai/deepseek-v4-flash-0731", "label": "DeepSeek V4 Flash", "tier": "free",
      "reasoning": True, "efforts": ["low", "high"], "blurb": "Fast reasoning chain, high effort."},
-    {"id": "openai/gpt-oss-120b", "label": "GPT-OSS 120B", "tier": "free",
-     "reasoning": True, "blurb": "Open-weight generalist."},
     {"id": "mistralai/mistral-nemotron", "label": "Mistral Nemotron", "tier": "free",
      "blurb": "Compact and obedient."},
     {"id": "meta/llama-3.2-90b-vision-instruct", "label": "Llama 3.2 90B Vision", "tier": "free",
