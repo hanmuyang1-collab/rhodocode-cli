@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rhodocode"
+version = "0.1.0"
+description = "Rhododendron Code — an agentic coding assistant for the terminal, powered by the Rhododendron multi-model backend."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Rhododendron" }]
+keywords = ["ai", "cli", "coding-agent", "llm", "rhododendron"]
+dependencies = [
+    "requests>=2.31",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+hf = ["huggingface-hub>=0.24"]
+
+[project.scripts]
+rhodocode = "rhodocode.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["rhodocode*"]
